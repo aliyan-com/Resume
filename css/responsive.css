@@ -1,1 +1,148 @@
+/* ===== RESPONSIVE ===== */
 
+/* Tablets & Medium Screens */
+@media (max-width: 991.98px) {
+    .hero-title {
+        font-size: 2.8rem !important;
+    }
+    .profile-image {
+        width: 250px;
+        height: 250px;
+    }
+    .section-title {
+        font-size: 2.2rem;
+    }
+    .timeline {
+        padding-right: 15px;
+    }
+    .timeline-item {
+        padding-right: 20px;
+    }
+    .timeline-dot {
+        right: -18px;
+        width: 12px;
+        height: 12px;
+    }
+    .glass-nav {
+        background: var(--glass-bg-light) !important;
+        backdrop-filter: blur(20px);
+    }
+    body.dark-mode .glass-nav {
+        background: var(--glass-bg-dark) !important;
+    }
+    .nav-link {
+        padding: 8px 0;
+    }
+}
+
+/* Mobile Phones */
+@media (max-width: 767.98px) {
+    .hero-title {
+        font-size: 2.2rem !important;
+    }
+    .hero-subtitle {
+        font-size: 1.1rem !important;
+    }
+    .profile-image {
+        width: 200px;
+        height: 200px;
+    }
+    .section-title {
+        font-size: 1.8rem;
+    }
+    .hero-buttons .btn {
+        width: 100%;
+        justify-content: center;
+    }
+    .floating-badge {
+        font-size: 0.7rem;
+        padding: 4px 12px;
+    }
+    .floating-badge.top-right {
+        top: 0;
+        right: 0;
+    }
+    .floating-badge.bottom-left {
+        bottom: 0;
+        left: 0;
+    }
+    .timeline-content {
+        padding: 18px 20px;
+    }
+    .about-card {
+        padding: 20px !important;
+    }
+    .contact-info-card {
+        padding: 20px;
+    }
+    .contact-info-item {
+        flex-direction: column;
+        text-align: center;
+    }
+    .theme-toggle {
+        width: 40px;
+        height: 40px;
+        font-size: 1rem;
+        top: 12px;
+        left: 12px;
+    }
+    .scroll-indicator {
+        display: none;
+    }
+    .section-tag {
+        font-size: 0.75rem;
+        padding: 4px 14px;
+    }
+    .skill-card {
+        padding: 20px 15px;
+    }
+    .skill-tags {
+        gap: 5px;
+    }
+    .skill-tag {
+        font-size: 0.7rem;
+        padding: 3px 10px;
+    }
+    .lang-item .progress {
+        height: 8px;
+    }
+    .lang-item .progress-bar {
+        font-size: 0.6rem;
+        line-height: 8px;
+    }
+}
+
+/* Small Phones */
+@media (max-width: 480px) {
+    .hero-title {
+        font-size: 1.8rem !important;
+    }
+    .profile-image {
+        width: 160px;
+        height: 160px;
+    }
+    .profile-ring {
+        inset: -8px;
+    }
+    .container {
+        padding-left: 15px;
+        padding-right: 15px;
+    }
+    .timeline::before {
+        right: 4px;
+    }
+    .timeline-dot {
+        right: -14px;
+        width: 10px;
+        height: 10px;
+    }
+    .contact-icon {
+        width: 40px;
+        height: 40px;
+        min-width: 40px;
+        font-size: 1rem;
+    }
+    .floating-badge {
+        display: none;
+    }
+}
