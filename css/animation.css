@@ -1,1 +1,109 @@
+/* ===== ANIMATIONS ===== */
 
+/* AOS Override for RTL */
+[data-aos="fade-right"] {
+    transform: translateX(-50px);
+    opacity: 0;
+    transition-property: transform, opacity;
+}
+[data-aos="fade-right"].aos-animate {
+    transform: translateX(0);
+    opacity: 1;
+}
+
+[data-aos="fade-left"] {
+    transform: translateX(50px);
+    opacity: 0;
+    transition-property: transform, opacity;
+}
+[data-aos="fade-left"].aos-animate {
+    transform: translateX(0);
+    opacity: 1;
+}
+
+/* Floating Animation for Cards */
+.skill-card,
+.edu-card,
+.contact-info-card {
+    animation: card-float 6s ease-in-out infinite;
+    animation-play-state: paused;
+}
+.skill-card:hover,
+.edu-card:hover,
+.contact-info-card:hover {
+    animation-play-state: running;
+}
+@keyframes card-float {
+    0%, 100% { transform: translateY(0); }
+    50% { transform: translateY(-6px); }
+}
+
+/* Smooth fade-in for timeline items */
+.timeline-item {
+    opacity: 0;
+    transform: translateY(30px);
+    animation: fade-slide-up 0.6s ease forwards;
+}
+.timeline-item:nth-child(1) { animation-delay: 0.1s; }
+.timeline-item:nth-child(2) { animation-delay: 0.2s; }
+.timeline-item:nth-child(3) { animation-delay: 0.3s; }
+.timeline-item:nth-child(4) { animation-delay: 0.4s; }
+@keyframes fade-slide-up {
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+/* Glow animation for primary buttons */
+.btn-primary {
+    animation: glow-pulse 3s ease-in-out infinite;
+}
+@keyframes glow-pulse {
+    0%, 100% { box-shadow: 0 8px 25px rgba(108, 99, 255, 0.3); }
+    50% { box-shadow: 0 8px 40px rgba(108, 99, 255, 0.5); }
+}
+
+/* Text shimmer effect for gradient texts */
+.text-gradient {
+    background-size: 200% 200%;
+    animation: shimmer 4s ease-in-out infinite;
+}
+@keyframes shimmer {
+    0% { background-position: 0% 50%; }
+    50% { background-position: 100% 50%; }
+    100% { background-position: 0% 50%; }
+}
+
+/* Entrance animation for hero */
+.hero-section .col-lg-6 {
+    animation: hero-entrance 1s ease forwards;
+}
+@keyframes hero-entrance {
+    from {
+        opacity: 0;
+        transform: translateY(40px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+/* Stagger animation for skill tags */
+.skill-tag {
+    opacity: 0;
+    transform: scale(0.8);
+    animation: pop-in 0.4s ease forwards;
+}
+.skill-card:nth-child(1) .skill-tag:nth-child(1) { animation-delay: 0.05s; }
+.skill-card:nth-child(1) .skill-tag:nth-child(2) { animation-delay: 0.1s; }
+.skill-card:nth-child(1) .skill-tag:nth-child(3) { animation-delay: 0.15s; }
+.skill-card:nth-child(1) .skill-tag:nth-child(4) { animation-delay: 0.2s; }
+/* ادامه برای سایر کارت‌ها... */
+@keyframes pop-in {
+    to {
+        opacity: 1;
+        transform: scale(1);
+    }
+}
