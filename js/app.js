@@ -1,10 +1,16 @@
 // ===== PRELOADER =====
-document.addEventListener('DOMContentLoaded', function() {
+window.addEventListener('load', function () {
     const preloader = document.getElementById('preloader');
-    setTimeout(() => {
-        preloader.classList.add('hide');
-    }, 1200);
+
+    if (!preloader) return;
+
+    preloader.classList.add('hide');
+
+    setTimeout(function () {
+        preloader.remove();
+    }, 300);
 });
+
 
 // ===== ACTIVE NAV LINK ON SCROLL =====
 const sections = document.querySelectorAll('section[id]');
