@@ -1,3 +1,4 @@
+
 // ===== PRELOADER =====
 window.addEventListener('load', function () {
     const preloader = document.getElementById('preloader');
@@ -10,7 +11,6 @@ window.addEventListener('load', function () {
         preloader.remove();
     }, 300);
 });
-
 
 // ===== ACTIVE NAV LINK ON SCROLL =====
 const sections = document.querySelectorAll('section[id]');
