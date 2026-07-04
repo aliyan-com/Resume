@@ -1,10 +1,9 @@
 // ===== PRELOADER =====
-window.addEventListener('load', function () {
+document.addEventListener('DOMContentLoaded', function() {
     const preloader = document.getElementById('preloader');
-
-    if (preloader) {
-        preloader.style.display = 'none';
-    }
+    setTimeout(() => {
+        preloader.classList.add('hide');
+    }, 1200);
 });
 
 // ===== ACTIVE NAV LINK ON SCROLL =====
@@ -13,23 +12,20 @@ const navLinks = document.querySelectorAll('.nav-link');
 
 window.addEventListener('scroll', () => {
     let current = '';
-
     sections.forEach(section => {
         const sectionTop = section.offsetTop - 100;
-
-        if (window.scrollY >= sectionTop) {
+        if (scrollY >= sectionTop) {
             current = section.getAttribute('id');
         }
     });
-
     navLinks.forEach(link => {
         link.classList.remove('active');
-
         if (link.getAttribute('href') === '#' + current) {
             link.classList.add('active');
         }
     });
 });
+
 // ===== TYPEWRITER EFFECT =====
 const typewriterElement = document.getElementById('typewriter');
 const texts = [
