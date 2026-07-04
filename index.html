@@ -1,0 +1,560 @@
+<!DOCTYPE html>
+<html lang="fa" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>رضا علی یان | برنامه‌نویس فول استک، شبکه و هوش مصنوعی</title>
+    
+    <!-- Bootstrap 5.3.2 RTL -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.rtl.min.css">
+    
+    <!-- Font Awesome 6 -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+    
+    <!-- AOS Animation Library -->
+    <link rel="stylesheet" href="https://unpkg.com/aos@2.3.1/dist/aos.css">
+    
+    <!-- Custom Styles -->
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/responsive.css">
+    <link rel="stylesheet" href="css/animation.css">
+</head>
+<body>
+
+    <!-- ==================== PRELOADER ==================== -->
+    <div id="preloader">
+        <div class="loader-spinner"></div>
+        <div class="loader-text">بارگذاری...</div>
+    </div>
+
+    <!-- ==================== DARK/LIGHT TOGGLE ==================== -->
+    <div class="theme-toggle" id="themeToggle">
+        <i class="fas fa-moon"></i>
+    </div>
+
+    <!-- ==================== NAVIGATION ==================== -->
+    <nav class="navbar navbar-expand-lg fixed-top glass-nav" id="mainNav">
+        <div class="container">
+            <a class="navbar-brand fw-bold" href="#home">
+                <img src="img/logo.png" alt="رضا علی یان" class="navbar-logo" height="45">
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navMenu">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navMenu">
+                <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+                    <li class="nav-item"><a class="nav-link active" href="#home">خانه</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#about">درباره من</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#skills">مهارت‌ها</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#experience">تجربیات</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#education">تحصیلات</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav> 
+
+
+<!-- ==================== HOME / HERO SECTION ==================== -->
+
+<section id="home" class="hero-section min-vh-100 d-flex align-items-center">
+
+    <div class="container">
+
+        <div class="row align-items-center g-5">
+
+            <div class="col-lg-6 order-lg-1" data-aos="fade-right" data-aos-duration="1000">
+
+                <div class="hero-badge mb-3">
+
+                    <span class="badge-pulse"><i class="fas fa-code"></i> در دسترس برای همکاری</span>
+
+                </div>
+
+                <h1 class="hero-title display-3 fw-bold mb-3">
+
+                    <span class="text-gradient">رضا علی یان</span>
+
+                </h1>
+
+                <h2 class="hero-subtitle h4 text-muted mb-4">
+
+                    برنامه‌نویس <span class="typewriter-text" id="typewriter"></span>
+
+                </h2>
+
+                <p class="hero-desc lead mb-4">
+
+                    برنامه نویس فول استک| متخصص شبکه | هوش مصنوعی | DevOps | معماری نرم‌افزار | نرم افزارهای آفیس
+
+                </p>
+
+
+
+                <h4>ارتباط با <span class="text-gradient">من:</span></h4>
+
+                <div class="hero-social mt-4 d-flex gap-3">
+
+                    <a href="https://eitaa.com/aliyan_reza" class="social-icon social-ita" title="ایتا">
+
+                        <img src="img/ita.svg" alt="ایتا" class="social-logo">
+
+                        <span class="social-label">ایتا</span>
+
+                    </a>
+
+                    <a href="https://rubika.ir/aliyan_reza" class="social-icon social-rubika" title="روبیکا">
+
+                        <img src="img/rubika.svg" alt="روبیکا" class="social-logo">
+
+                        <span class="social-label">روبیکا</span>
+
+                    </a>
+
+                    <a href="https://ble.ir/aliyan_reza" class="social-icon social-bale" title="بله">
+
+                        <img src="img/bale.svg" alt="بله" class="social-logo">
+
+                        <span class="social-label">بله</span>
+
+                    </a>
+
+                </div>
+
+            </div>
+
+            <div class="col-lg-6 order-lg-2 text-center" data-aos="fade-left" data-aos-duration="1000">
+
+                <div class="profile-image-wrapper">
+
+                    <div class="profile-ring"></div>
+
+                    <img src="img/profile.jpg" alt="رضا علی یان" class="profile-image rounded-circle img-fluid">
+
+                    <div class="floating-badge top-right">
+
+                        <i class="fas fa-check-circle text-success"></i> ۱۰+ پروژه
+
+                    </div>
+
+                    <div class="floating-badge bottom-left">
+
+                        <i class="fas fa-star text-warning"></i> ۴.۹/۵
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </div>
+
+    <div class="scroll-indicator">
+
+        <span>اسکرول کنید</span>
+
+        <i class="fas fa-chevron-down"></i>
+
+    </div>
+
+</section>
+
+
+
+<!-- ==================== ABOUT SECTION ==================== -->
+
+<section id="about" class="about-section py-5">
+
+    <div class="container">
+
+        <div class="section-header text-center mb-5" data-aos="fade-up">
+
+            <span class="section-tag">معرفی</span>
+
+            <h2 class="section-title">درباره <span class="text-gradient">من</span></h2>
+
+            <div class="section-divider"></div>
+
+        </div>
+
+        <div class="row g-4">
+
+            <div class="col-lg-8 mx-auto" data-aos="fade-up" data-aos-delay="100">
+
+                <div class="about-card p-4 p-lg-5">
+
+                    <p class="about-text lead">
+
+                        برنامه‌نویس <strong>فول استک</strong> با تجربه در پیاده‌سازی وب‌سایت‌ها، 
+
+                        سامانه‌های اداری و سازمانی. متخصص در توسعه نرم‌افزارهای <strong>ویندوزی</strong>، 
+
+                        <strong>موبایل</strong> و <strong>وب</strong> با معماری چندلایه.
+
+                    </p>
+
+                    <p class="about-text">
+
+                        دارای تجربه موفق در پروژه‌های <strong>فریلنسری</strong> و آشنایی کامل با 
+
+                        <strong>DevOps</strong>، <strong>شبکه‌های کامپیوتری</strong>، مدیریت سرور و 
+
+                        همکاری تیمی در <strong>Azure</strong> ،<strong>GitHub</strong> و <strong>نرم افزارهای آفیس(ورد، اکسل، اکسس و...).</strong>
+
+                        همیشه در حال یادگیری و به‌روزرسانی مهارت‌ها.
+
+                    </p>
+
+                    <div class="about-info-grid row g-3 mt-3">
+
+                        <div class="col-sm-6">
+
+                            <div class="info-item">
+
+                                <i class="fas fa-calendar-alt text-primary"></i>
+
+                                <span>تولد: ۱۳۷۱/۰۳/۲۷</span>
+
+                            </div>
+
+                        </div>
+
+                        <div class="col-sm-6">
+
+                            <div class="info-item">
+
+                                <i class="fas fa-shield-alt text-primary"></i>
+
+                                <span>پایان خدمت سربازی</span>
+
+                            </div>
+
+                        </div>
+
+                        <div class="col-sm-6">
+
+                            <div class="info-item">
+
+                                <i class="fas fa-heart text-primary"></i>
+
+                                <span>متأهل</span>
+
+                            </div>
+
+                        </div>
+
+                        <div class="col-sm-6">
+
+                            <div class="info-item">
+
+                                <i class="fas fa-map-marker-alt text-primary"></i>
+
+                                <span>تبریز، خیابان بهار، ۲۰ متری شهید رنجبر، بن‌بست مدرسه، پلاک ۴۶ | ورزقان روستای چلناب</span>
+
+                            </div>
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</section>
+
+    <!-- ==================== SKILLS SECTION ==================== -->
+    <section id="skills" class="skills-section py-5">
+        <div class="container">
+            <div class="section-header text-center mb-5" data-aos="fade-up">
+                <span class="section-tag">تخصص‌ها</span>
+                <h2 class="section-title">مهارت‌های <span class="text-gradient">حرفه‌ای</span></h2>
+                <div class="section-divider"></div>
+            </div>
+            
+            <div class="row g-4">
+                <!-- Skill Category: Backend -->
+                <div class="col-md-6 col-lg-4" data-aos="fade-up" data-aos-delay="100">
+                    <div class="skill-card">
+                        <div class="skill-icon"><i class="fas fa-server"></i></div>
+                        <h4>بک‌اند</h4>
+                        <div class="skill-tags">
+                            <span class="skill-tag">ASP.NET</span>
+                            <span class="skill-tag">Django</span>
+                            <span class="skill-tag">Node.js</span>
+                            <span class="skill-tag">Express.js</span>
+                            <span class="skill-tag">Python</span>
+                            <span class="skill-tag">C#</span>
+                            <span class="skill-tag">JavaScript</span>
+                            <span class="skill-tag">Dart</span>
+
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Skill Category: Frontend -->
+                <div class="col-md-6 col-lg-4" data-aos="fade-up" data-aos-delay="200">
+                    <div class="skill-card">
+                        <div class="skill-icon"><i class="fas fa-code"></i></div>
+                        <h4>فرانت‌اند</h4>
+                        <div class="skill-tags">
+                            <span class="skill-tag">React</span>
+                            <span class="skill-tag">Redux</span>
+                            <span class="skill-tag">Next.js</span>
+                            <span class="skill-tag">Vue.js</span>
+                            <span class="skill-tag">Angular</span>
+                            <span class="skill-tag">Flutter</span>
+ 
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Skill Category: Database -->
+                <div class="col-md-6 col-lg-4" data-aos="fade-up" data-aos-delay="300">
+                    <div class="skill-card">
+                        <div class="skill-icon"><i class="fas fa-database"></i></div>
+                        <h4>پایگاه داده</h4>
+                        <div class="skill-tags">
+                            <span class="skill-tag">SQL Server</span>
+                            <span class="skill-tag">MySQL</span>
+                            <span class="skill-tag">PostgreSQL</span>
+                            <span class="skill-tag">MongoDB</span>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Skill Category: DevOps & Tools -->
+                <div class="col-md-6 col-lg-4" data-aos="fade-up" data-aos-delay="400">
+                    <div class="skill-card">
+                        <div class="skill-icon"><i class="fas fa-cloud"></i></div>
+                        <h4>DevOps & ابزارها</h4>
+                        <div class="skill-tags">
+                            <span class="skill-tag">GitHub</span>
+                            <span class="skill-tag">Azure</span>
+                            <span class="skill-tag">Docker</span>
+                            <span class="skill-tag">Linux</span>
+                            <span class="skill-tag">Networking</span>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Skill Category: UI/UX & Design -->
+                <div class="col-md-6 col-lg-4" data-aos="fade-up" data-aos-delay="500">
+                    <div class="skill-card">
+                        <div class="skill-icon"><i class="fas fa-pencil-ruler"></i></div>
+                        <h4>UI/UX & Design</h4>
+                        <div class="skill-tags">
+                            <span class="skill-tag">Figma</span>
+                            <span class="skill-tag">Bootstrap</span>
+                            <span class="skill-tag">Tailwind</span>
+                            <span class="skill-tag">SEO</span>
+                            <span class="skill-tag">WordPress</span>
+                            <span class="skill-tag">Elementor</span>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Skill Category: Architecture -->
+                <div class="col-md-6 col-lg-4" data-aos="fade-up" data-aos-delay="600">
+                    <div class="skill-card">
+                        <div class="skill-icon"><i class="fas fa-layer-group"></i></div>
+                        <h4>معماری نرم‌افزار</h4>
+                        <div class="skill-tags">
+                            <span class="skill-tag">N-Tier</span>
+                            <span class="skill-tag">Microservices</span>
+                            <span class="skill-tag">MVC</span>
+                            <span class="skill-tag">RESTful API</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+<!-- ==================== EXPERIENCE SECTION ==================== -->
+
+<section id="experience" class="experience-section py-5">
+    <div class="container">
+        <div class="section-header text-center mb-5" data-aos="fade-up">
+            <span class="section-tag">سوابق</span>
+            <h2 class="section-title">سوابق <span class="text-gradient">حرفه‌ای</span></h2>
+            <div class="section-divider"></div>
+        </div>
+
+        <div class="timeline">
+
+            <!-- Experience 1 -->
+            <div class="timeline-item" data-aos="fade-up" data-aos-delay="100">
+                <div class="timeline-dot"></div>
+                <div class="timeline-content">
+                    <div class="timeline-date">شهریور ۱۴۰۲ - دی ۱۴۰۴</div>
+                    <h3 class="timeline-title">برنامه‌نویس ارشد</h3>
+                    <h4 class="timeline-company">شرکت آلتون، شهر فناوری</h4>
+                    <ul class="timeline-list">
+                        <li>طراحی، توسعه و استقرار سامانه‌های سازمانی مبتنی بر معماری چندلایه</li>
+                        <li>رهبری تیم توسعه، بازبینی کدها و تضمین کیفیت نرم‌افزار</li>
+                        <li>طراحی و پیاده‌سازی APIهای امن، مقیاس‌پذیر و بهینه</li>
+                    </ul>
+                </div>
+            </div>
+
+            <!-- Experience 2 -->
+            <div class="timeline-item" data-aos="fade-up" data-aos-delay="200">
+                <div class="timeline-dot"></div>
+                <div class="timeline-content">
+                    <div class="timeline-date">مهر ۱۳۹۵ - فروردین ۱۳۹۷</div>
+                    <h3 class="timeline-title">مدیر پروژه و برنامه‌نویس ارشد</h3>
+                    <h4 class="timeline-company">سازمان ایثارگران کشور</h4>
+                    <ul class="timeline-list">
+                        <li>مدیریت، برنامه‌ریزی و نظارت بر چرخه کامل اجرای پروژه‌های نرم‌افزاری</li>
+                        <li>طراحی معماری، توسعه و استقرار سامانه‌های نرم‌افزاری و زیرساخت‌های شبکه</li>
+                        <li>هماهنگی مؤثر میان تیم‌های فنی، اجرایی و ذینفعان پروژه</li>
+                    </ul>
+                </div>
+            </div>
+
+            <!-- Experience 3 -->
+            <div class="timeline-item" data-aos="fade-up" data-aos-delay="300">
+                <div class="timeline-dot"></div>
+                <div class="timeline-content">
+                    <div class="timeline-date">فروردین ۱۳۹۷ - اسفند ۱۳۹۸</div>
+                    <h3 class="timeline-title">برنامه‌نویس</h3>
+                    <h4 class="timeline-company">تبریز اپ</h4>
+                    <ul class="timeline-list">
+                        <li>توسعه و پیاده‌سازی اپلیکیشن‌های موبایل با استفاده از Flutter</li>
+                        <li>طراحی، توسعه و نگهداری سامانه‌های مدیریت محتوا (CMS)</li>
+                        <li>بهینه‌سازی عملکرد، امنیت و پایداری نرم‌افزارها</li>
+                    </ul>
+                </div>
+            </div>
+
+            <!-- Experience 4 -->
+            <div class="timeline-item" data-aos="fade-up" data-aos-delay="400">
+                <div class="timeline-dot"></div>
+                <div class="timeline-content">
+                    <div class="timeline-date">دی ۱۴۰۴ - اکنون</div>
+                    <h3 class="timeline-title"> دفتردار حفاری، نگهداری و تعمیرات (نت) و حراست</h3>
+                    <h4 class="timeline-company">مؤسسه فاطر - خاتم‌الانبیاء</h4>
+                    <ul class="timeline-list">
+                        <li>تسلط بر سامانه‌های اتوماسیون اداری، مکاتبات سازمانی و سیستم‌های منابع انسانی</li>
+                        <li>تسلط بر سامانه‌های مدیریت نگهداری و تعمیرات (CMMS) و فرآیندهای نت</li>
+                        <li>آشنایی کامل با سامانه‌های پشتیبانی، مستندسازی و گردش کار سازمانی</li>
+                        <li>تسلط بر مجموعه نرم‌افزارهای Microsoft Office و تهیه گزارش‌های مدیریتی</li>
+                    </ul>
+                </div>
+            </div>
+
+        </div>
+    </div>
+</section>
+
+    <!-- ==================== EDUCATION SECTION ==================== -->
+    <section id="education" class="education-section py-5">
+        <div class="container">
+            <div class="section-header text-center mb-5" data-aos="fade-up">
+                <span class="section-tag">تحصیلات</span>
+                <h2 class="section-title">سوابق <span class="text-gradient">تحصیلی</span></h2>
+                <div class="section-divider"></div>
+            </div>
+            
+            <div class="row g-4">
+                <div class="col-lg-6" data-aos="fade-up" data-aos-delay="100">
+                    <div class="edu-card">
+                        <div class="edu-icon"><i class="fas fa-graduation-cap"></i></div>
+                        <h3>مهندسی تکنولوژی نرم‌افزار</h3>
+                        <h4>مقطع کارشناسی</h4>
+                        <p class="edu-university">دانشگاه دانشوران تبریز</p>
+                        <p class="edu-date">۱۳۸۸ - ۱۳۹۲</p>
+                        <p class="edu-desc">
+                            معدل: <strong>۱۶.۶۷</strong> | پایان‌نامه: معماری سه‌لایه و چندلایه، 
+                            طراحی سایت و ویندوز اپلیکیشن مزایده خودرو با ASP.NET
+                        </p>
+                    </div>
+                </div>
+                
+                <div class="col-lg-6" data-aos="fade-up" data-aos-delay="200">
+                    <div class="edu-card">
+                        <div class="edu-icon"><i class="fas fa-laptop-code"></i></div>
+                        <h3>دوره‌های تخصصی برنامه‌نویسی</h3>
+                        <h4>آموزش‌های تکمیلی</h4>
+                        <p class="edu-university">مکتب شریف، تاپ لرن، سبزلرن، کدباد، یوتیوب</p>
+                        <p class="edu-date">۱۳۹۰ - اکنون</p>
+                        <p class="edu-desc">
+                            گذراندن دوره‌های پیشرفته در زمینه‌های مختلف برنامه‌نویسی، 
+                            هوش مصنوعی، DevOps و معماری نرم‌افزار
+                        </p>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- Languages -->
+            <div class="row mt-5" data-aos="fade-up" data-aos-delay="300">
+                <div class="col-12">
+                    <div class="languages-card">
+                        <h4><i class="fas fa-language text-primary me-2"></i>زبان‌های مسلط</h4>
+                        <div class="language-bars">
+                            <div class="lang-item">
+                                <span class="lang-name">فارسی</span>
+                                <div class="progress">
+                                    <div class="progress-bar" style="width: 100%;">مادری</div>
+                                </div>
+                            </div>
+                            <div class="lang-item">
+                                <span class="lang-name">آذری</span>
+                                <div class="progress">
+                                    <div class="progress-bar" style="width: 100%;">مادری</div>
+                                </div>
+                            </div>
+                            <div class="lang-item">
+                                <span class="lang-name">انگلیسی</span>
+                                <div class="progress">
+                                    <div class="progress-bar" style="width: 60%;">متوسط</div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <!-- ==================== FOOTER ==================== -->
+    <footer class="footer-section py-4">
+        <div class="container text-center">
+            <p class="mb-0">
+                &copy; ۲۰۲۶ <span class="text-gradient">رضا علی یان</span> | 
+                تمامی حقوق محفوظ است
+            </p>
+            <br>
+            <div >
+                <a href="https://eitaa.com/aliyan_reza" class="social-icon social-ita" title="ایتا">
+                    <img src="img/ita.svg" alt="ایتا" class="social-logo">
+                    <span class="social-label">ایتا</span>
+                </a>
+                <a href="https://rubika.ir/aliyan_reza" class="social-icon social-rubika" title="روبیکا">
+                    <img src="img/rubika.svg" alt="روبیکا" class="social-logo">
+                    <span class="social-label">روبیکا</span>
+                </a>
+                <a href="https://ble.ir/aliyan_reza" class="social-icon social-bale" title="بله">
+                    <img src="img/bale.svg" alt="بله" class="social-logo">
+                    <span class="social-label">بله</span>
+                </a>
+            </div>
+        </div>
+    </footer>
+
+
+    <!-- ==================== SCRIPTS ==================== -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script src="js/app.js"></script>
+    <script src="js/darkmode.js"></script>
+    <script src="js/animation.js"></script>
+</body>
+</html>
