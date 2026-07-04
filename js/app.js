@@ -1,14 +1,9 @@
-
 // ===== PRELOADER =====
 window.addEventListener('load', function () {
     const preloader = document.getElementById('preloader');
 
     if (preloader) {
-        preloader.classList.add('hide');
-
-        setTimeout(() => {
-            preloader.remove();
-        }, 300);
+        preloader.style.display = 'none';
     }
 });
 
