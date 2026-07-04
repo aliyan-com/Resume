@@ -3,13 +3,13 @@
 window.addEventListener('load', function () {
     const preloader = document.getElementById('preloader');
 
-    if (!preloader) return;
+    if (preloader) {
+        preloader.classList.add('hide');
 
-    preloader.classList.add('hide');
-
-    setTimeout(function () {
-        preloader.remove();
-    }, 300);
+        setTimeout(() => {
+            preloader.remove();
+        }, 300);
+    }
 });
 
 // ===== ACTIVE NAV LINK ON SCROLL =====
@@ -18,20 +18,23 @@ const navLinks = document.querySelectorAll('.nav-link');
 
 window.addEventListener('scroll', () => {
     let current = '';
+
     sections.forEach(section => {
         const sectionTop = section.offsetTop - 100;
-        if (scrollY >= sectionTop) {
+
+        if (window.scrollY >= sectionTop) {
             current = section.getAttribute('id');
         }
     });
+
     navLinks.forEach(link => {
         link.classList.remove('active');
+
         if (link.getAttribute('href') === '#' + current) {
             link.classList.add('active');
         }
     });
 });
-
 // ===== TYPEWRITER EFFECT =====
 const typewriterElement = document.getElementById('typewriter');
 const texts = [
